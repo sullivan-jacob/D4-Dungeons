@@ -1,0 +1,13 @@
+![[Verity-Thislewater-I1.jpg]]
+
+This is Verity Thistlewater, and she is a Warlock with an Archfey patron. Verity was born into a community that deeply valued nature and the wild places of the world. When she was a young woman however, she wandered into the Feywild, and spent several years there, where she met, and fell in love with an Archfey. This Archfey returned her affection, and the two were wed, and Verity became one of their warlocks.
+When Verity returned from the Feywild, she returned into a different time than the one she had left. The Wild Places of the world were no longer being respected, and so Verity was tasked with the responsibility of gathering various artifacts of fey magic to protect the wild places, and ensure that her Fey partner's influence and power did not wholly vanish from the material realm.
+Many years have gone by since she began this work, and as she begins to grow ever-older, she hopes to finish her work and pass it on to a successor, and return to her love to live out the rest of her life.
+Also, not many people know that she is a warlock, and assume her to be a sorceress of some kind. Verity is more than willing to let people continue to believe this, so fewer people interfere with the true nature of her work.
+
+As the one shot begins, Verity is in search of a powerful Fey artifact that will be able to connect a place currently tied to Shadowfell to the Feywild.
+
+| Conflicts             | Relation                | Motivation                                                                                                                                         | Actions                                                                                                              |
+| --------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Destruction of Nature | Seeks to protect Nature | Grew up as a druid, among those who honored and protected nature. Is married to and is a warlock to an Archfey who is greatly connected to nature. | Restores and establishes sites of collected fey magic to create Feycrossings, connecting those areas to the Feywild. |
+|                       |                         |                                                                                                                                                    |                                                                                                                      |
