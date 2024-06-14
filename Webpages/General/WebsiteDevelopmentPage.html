@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D4 Dungeons | Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../D4DungeonsCSS.css" />
+</head>
+<body>
+    <main>
+        <nav id="nav-bar">
+            <a href="index.html">Home Page</a>
+            <a href="VerityThistlewater.html">Verity Thistlewater</a>
+            <a href="RegionalMap.html">Regional Map</a>
+            <a href="WebsiteDevelopmentPage.html">Website Development Information</a>
+        </nav>
+        <input type="checkbox" id="switch" />
+        <div class="switch-btn">
+            <label for="switch">
+                <img src="../Resources/moon-icon.png" alt="Dark Mode" id = "moon-icon" />
+                <img src="../Resources/sun-icon.png" alt="Light Mode" id = "sun-icon"/>
+            </label>
+        </div>
+        <div id="content">
+            <h1>Website Development</h1>
+            <p>This page is meant to help players know what features are under Development and what bugs are being addressed.<br>
+            Features will be listed here along with their current progress. Completed features will be listed on this page for two weeks after completion.<br>
+            Known bugs will be listed here, as well as a description of them and how close they are to being removed. Bugs can be sent to Sullie over discord in the bugs channel.</p>
+            <h2>Features</h2>
+            <h3>Theme Selection Memory</h3>
+            <p>The goal of the Theme Selection Memory feature is to maintain the selected theme between pages and sessions, instead of turning dark mode on everytime a page is loaded.<br>
+            The plan for how to achieve this has been established; however, initial test have achieved unexpected results. The current plan is to meet with a Web Development professor to fix the issues.</p>
+            <h3>New Theme UI</h3>
+            <p>The goal with this feature is to allow for more themes than light and dark mode.<br>
+            Theme suggestions are needed. Suggestions should have the HEX code of the colors and a description of where each color is used.<br>
+            A new Theme UI is needed inorder to support more themes. This feature will be worked on once the Theme Selection Memory feature has been completed.</p>
+            <h2>Bugs</h2>
+            <h3>Text boxes on some webpages merges with the navagation bar when viewing from mobile device</h3>
+            <P>When viewing the website on a mobile device, some text boxes merge with the navigation bar. While the text never overlaps and this doesn't effect functionality, this is not the intended behavior and looks weird.<br>
+            I have been unsuccessful in correcting this, and will be working with a Web Development professor to correct it.</P>
+            <h3>Page Title on some webpages displays improperly when it's space is taken up by the navigation bar on mobile devices</h3>
+            <p>This is a seporate manifestation of the same bug as above. This will be handled differently from the above bug report, but will be handled at the same time.</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    const modeToggle = document.getElementById('switch');
+    const body = document.body;
+  
+    modeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.add('light-mode');
+        /*setTheme("light");*/
+        /*
+        navBar.classList.add('light-mode');
+        links.forEach(link => link.classList.add('light-mode'));
+        headers.forEach(header => header.classList.add('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.add('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.add('light-mode'));
+        */
+        } else {
+        body.classList.remove('light-mode');
+        /*setTheme("dark");*/
+        /*
+        navBar.classList.remove('light-mode');
+        links.forEach(link => link.classList.remove('light-mode'));
+        headers.forEach(header => header.classList.remove('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.remove('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.remove('light-mode'));
+        */
+        }
+    });
+    /*
+    function setTheme(theme) {
+        const date = new Date();
+        date.setTime(date.getTime() + (2592000000/*30 days/));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=sullivan-jacob.github.io/D4-Dungeons/Webpages";
+    }
+    function getTheme() {
+        const themeCookie = `; ${document.cookie}`;
+        const parts = themeCookie.split(`; theme=`);
+        if (parts.length === 2) {
+            return parts.pop().split(';').shift();
+        }
+    }
+    window.onload = function() {
+        const modeToggle = document.getElementById("switch");
+        theme = getTheme();
+        if (theme === light) {
+            body.classList.add("light-mode");
+            modeToggle.checked = true;
+        }
+    }*/
+  </script>
+</html>

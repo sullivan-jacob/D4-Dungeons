@@ -22,6 +22,7 @@ main {
     border-top-right-radius: .25in;
     border-bottom-right-radius: .25in;
     padding: 5px;
+    padding-right: 10px;
 }
 
 a {
@@ -99,6 +100,8 @@ label {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
     grid-column: 2/3;
     margin-top: 10px;
     padding-right: 50px;
@@ -125,13 +128,13 @@ p {
     border-radius: 10px;
     padding: 5px;
     background-color: var(--accent-color);
-    color: var(--background-color)
+    color: var(--background-color);
+    width: fit-content;
 }
 
-content img {
-    border: 5px;
-    border-radius: 5px;
-    border-color: var(--accent-color);
+#content img {
+    border-radius: 10px;
+    width: 100%;
 }
 
 .light-mode {
@@ -174,5 +177,17 @@ content img {
     }
     #nav-bar {
         float: left;
+    }
+    .switch-btn {
+        transform: translateY(-21px);
+    }
+    #content {
+        display: block;
+        padding-right: 0px;
+        margin-right: 5px;
+    }
+    #content img {
+        margin: 5px;
+        width: 98%;
     }
 }
