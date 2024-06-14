@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Document</title>
+    <title>Verity Thislewater | Main Page</title>
     <link rel="stylesheet" type="text/css" href="../D4DungeonsCSS.css" />
 </head>
 <body>
@@ -26,9 +26,9 @@
         </div>
         <div id="content">
             <h1>Verity Thislewater</h1>
-            <p>Player: Everett Whitaker</p>
-            <p>Class: Lv1 Warlock, Archfey Patron</p>
-            <p>Species: Human</p>
+            <p>Player: Everett Whitaker<br>
+            Class: Lv1 Warlock, Archfey Patron<br>
+            Species: Human</p>
             <h2>Appearance</h2>
             <p>Verity is an elderly woman who looks to be in her early 70’s. She has short curly gray hair and large round spectacles. Her eyes are iridescent, constantly shifting which color is dominant. These colors have an association with Verity’s emotions, although only those who have known her for a long time can catch the pattern. The colors and their meanings are as follows:<br>
              - Blue: Melancholy or other sad emotions<br>
@@ -52,6 +52,7 @@
     modeToggle.addEventListener('change', function() {
       if (this.checked) {
         body.classList.add('light-mode');
+        setTheme("light");
         /*
         navBar.classList.add('light-mode');
         links.forEach(link => link.classList.add('light-mode'));
@@ -59,8 +60,9 @@
         subheaders.forEach(subheader => subheader.classList.add('light-mode'));
         paragraphs.forEach(paragraph => paragraph.classList.add('light-mode'));
         */
-      } else {
+        } else {
         body.classList.remove('light-mode');
+        setTheme("dark");
         /*
         navBar.classList.remove('light-mode');
         links.forEach(link => link.classList.remove('light-mode'));
@@ -68,7 +70,28 @@
         subheaders.forEach(subheader => subheader.classList.remove('light-mode'));
         paragraphs.forEach(paragraph => paragraph.classList.remove('light-mode'));
         */
-      }
+        }
     });
+    function setTheme(theme) {
+        const date = new Date();
+        date.setTime(date.getTime() + (2592000000/*30 days*/));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=https://sullivan-jacob.github.io/D4-Dungeons/Webpages/";
+    }
+    function getTheme() {
+        const themeCookie = `; ${document.cookie}`;
+        const parts = themeCookie.split(`; theme=`);
+        if (parts.length === 2) {
+            return parts.pop().split(';').shift();
+        }
+    }
+    window.onload = function() {
+        const modeToggle = document.getElementById("switch");
+        theme = getTheme();
+        if (theme === light) {
+            body.classList.add("light-mode");
+            modeToggle.checked = true;
+        }
+    }
   </script>
 </html>

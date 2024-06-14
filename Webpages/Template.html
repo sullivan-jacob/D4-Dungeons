@@ -17,7 +17,7 @@
             <a href="">example 3</a>
             <a href="">example 4</a>
         </nav>
-            <input type="checkbox" id="switch" />
+        <input type="checkbox" id="switch" />
         <div class="switch-btn">
             <label for="switch">
                 <img src="Resources/moon-icon.png" alt="Dark Mode" id = "moon-icon" />
@@ -43,6 +43,7 @@
     modeToggle.addEventListener('change', function() {
       if (this.checked) {
         body.classList.add('light-mode');
+        setTheme("light");
         /*
         navBar.classList.add('light-mode');
         links.forEach(link => link.classList.add('light-mode'));
@@ -50,9 +51,9 @@
         subheaders.forEach(subheader => subheader.classList.add('light-mode'));
         paragraphs.forEach(paragraph => paragraph.classList.add('light-mode'));
         */
-        /*document.cookie = "count=1; expires=Wed, 01 Aug 2040 08:00:00 GMT; path=/; domain=";*/
-      } else {
+        } else {
         body.classList.remove('light-mode');
+        setTheme("dark");
         /*
         navBar.classList.remove('light-mode');
         links.forEach(link => link.classList.remove('light-mode'));
@@ -60,7 +61,28 @@
         subheaders.forEach(subheader => subheader.classList.remove('light-mode'));
         paragraphs.forEach(paragraph => paragraph.classList.remove('light-mode'));
         */
-      }
+        }
     });
+    function setTheme(theme) {
+        const date = new Date();
+        date.setTime(date.getTime() + (2592000000/*30 days*/));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=https://sullivan-jacob.github.io/D4-Dungeons/Webpages/";
+    }
+    function getTheme() {
+        const themeCookie = `; ${document.cookie}`;
+        const parts = themeCookie.split(`; theme=`);
+        if (parts.length === 2) {
+            return parts.pop().split(';').shift();
+        }
+    }
+    window.onload = function() {
+        const modeToggle = document.getElementById("switch");
+        theme = getTheme();
+        if (theme === light) {
+            body.classList.add("light-mode");
+            modeToggle.checked = true;
+        }
+    }
   </script>
 </html>
