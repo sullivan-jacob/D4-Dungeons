@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Document</title>
+    <link rel="stylesheet" type="text/css" href="../D4DungeonsCSS.css" />
+</head>
+<body>
+    <main>
+        <nav id="nav-bar">
+            <a href="">example 1</a>
+            <div>
+                <a href="">example 1a</a>
+            </div>
+            <a href="">example 2</a>
+            <a href="">example 3</a>
+            <a href="">example 4</a>
+        </nav>
+            <input type="checkbox" id="switch" />
+        <div class="switch-btn">
+            <label for="switch">
+                <img src="../Resources/moon-icon.png" alt="Dark Mode" id = "moon-icon" />
+                <img src="../Resources/sun-icon.png" alt="Light Mode" id = "sun-icon"/>
+            </label>
+        </div>
+        <div id="content">
+            <h1>Verity Thislewater</h1>
+            <p>Player: Everett Whitaker</p>
+            <p>Class: Lv1 Warlock, Archfey Patron</p>
+            <p>Species: Human</p>
+            <h2>Appearance</h2>
+            <p>Verity is an elderly woman who looks to be in her early 70’s. She has short curly gray hair and large round spectacles. Her eyes are iridescent, constantly shifting which color is dominant. These colors have an association with Verity’s emotions, although only those who have known her for a long time can catch the pattern. The colors and their meanings are as follows:<br>
+             - Blue: Melancholy or other sad emotions<br>
+             - Green: Content, at peace, low-energy happiness<br>
+             - Yellow: High energy happiness or excitement<br>
+             - Brown: Resolute, Curious<br>
+             - Red: Anger<br>
+             - Pink: Romantic love<br><br>
+            As far as Verity’s usual attire, she wears a typical set of wizard’s robes. They were once fine, but have been well traveled in, and stained with grass and soil. She wears a large, wide brimmed wizard’s hat, which has several small dangling crystal ornaments hanging from it. The primary colors of this attire is an outer layer of bright blue, and an inner layer of olive green. She wears a single earring in her left ear, patterned after the flower Viola Tricolor (the wild variant of the pansy flower). Her staff is a living branch, ever blooming with pink fey blossoms, when she casts magic, the petals of one flower scatter as if into a breeze only that commands only the petals, and the air is filled with the scents of flowers, honey, and tree sap. She also has a discrete pair of daggers sheathed at her side, only to be used in the most dire of circumstances.</p>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    const modeToggle = document.getElementById('switch');
+    const body = document.body;
+  
+    modeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.add('light-mode');
+        /*
+        navBar.classList.add('light-mode');
+        links.forEach(link => link.classList.add('light-mode'));
+        headers.forEach(header => header.classList.add('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.add('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.add('light-mode'));
+        */
+      } else {
+        body.classList.remove('light-mode');
+        /*
+        navBar.classList.remove('light-mode');
+        links.forEach(link => link.classList.remove('light-mode'));
+        headers.forEach(header => header.classList.remove('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.remove('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.remove('light-mode'));
+        */
+      }
+    });
+  </script>
+</html>

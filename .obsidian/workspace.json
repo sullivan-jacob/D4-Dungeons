@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1b99b8fb86e9800a",
+            "id": "c940f3e538540336",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Characters/Verity Thislewater.md",
+                "file": "Factions/Industrializers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7ac4695853588a4c",
+            "id": "5b2fd0581458241c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Webpages/File Structure.md",
+                "file": "Characters/Verity Thislewater.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 309.5
   },
   "right": {
     "id": "18875331e498ec21",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Webpages/File Structure.md",
+                "file": "Characters/Verity Thislewater.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Webpages/File Structure.md",
+                "file": "Characters/Verity Thislewater.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Webpages/File Structure.md"
+                "file": "Characters/Verity Thislewater.md"
               }
             }
           }
@@ -160,18 +160,22 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "5a1a6b66778f7cfa",
+  "active": "5b2fd0581458241c",
   "lastOpenFiles": [
-    "Webpages/General",
+    "Factions/Government.md",
+    "Factions/Industrializers.md",
+    "Untitled.md",
+    "Factions",
     "Characters/Verity Thislewater.md",
+    "Characters/Shal'Hatir.md",
+    "Characters/Deckard Roll, Son of Rick Roll.md",
+    "Characters/Verity-Thislewater-I1.jpg",
     "Webpages/File Structure.md",
+    "Webpages/General",
     "Webpages/Deckard Roll",
     "Webpages/Shal'Hatir",
     "Webpages/Verity Thislewater",
     "Webpages",
-    "Characters/Verity-Thislewater-I1.jpg",
-    "Characters/Shal'Hatir.md",
-    "Characters/Deckard Roll, Son of Rick Roll.md",
     "Characters",
     "Rules",
     "Lore"

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Document</title>
+    <link rel="stylesheet" type="text/css" href="D4DungeonsCSS.css" />
+</head>
+<body>
+    <main>
+        <nav id="nav-bar">
+            <a href="">example 1</a>
+            <div>
+                <a href="">example 1a</a>
+            </div>
+            <a href="">example 2</a>
+            <a href="">example 3</a>
+            <a href="">example 4</a>
+        </nav>
+            <input type="checkbox" id="switch" />
+        <div class="switch-btn">
+            <label for="switch">
+                <img src="Resources/moon-icon.png" alt="Dark Mode" id = "moon-icon" />
+                <img src="Resources/sun-icon.png" alt="Light Mode" id = "sun-icon"/>
+            </label>
+        </div>
+        <div id="content">
+            <h1>Test Title</h1>
+            <p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text</p>
+            <h2>Test Subheading</h2>
+            <p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text</p>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    const modeToggle = document.getElementById('switch');
+    const body = document.body;
+  
+    modeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.add('light-mode');
+        /*
+        navBar.classList.add('light-mode');
+        links.forEach(link => link.classList.add('light-mode'));
+        headers.forEach(header => header.classList.add('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.add('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.add('light-mode'));
+        */
+        /*document.cookie = "count=1; expires=Wed, 01 Aug 2040 08:00:00 GMT; path=/; domain=";*/
+      } else {
+        body.classList.remove('light-mode');
+        /*
+        navBar.classList.remove('light-mode');
+        links.forEach(link => link.classList.remove('light-mode'));
+        headers.forEach(header => header.classList.remove('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.remove('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.remove('light-mode'));
+        */
+      }
+    });
+  </script>
+</html>
