@@ -186,17 +186,21 @@ p {
     main {
         display: block;
     }
+    
     #nav-bar {
         float: left;
     }
+
     .switch-btn {
         transform: translateY(-21px);
     }
+
     #content {
         display: block;
         padding-right: 0px;
         margin-right: 5px;
     }
+
     #content img {
         margin: 5px;
         width: 98%;
