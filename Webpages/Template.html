@@ -67,7 +67,7 @@
         const date = new Date();
         date.setTime(date.getTime() + (2592000000/*30 days*/));
         const expires = "expires=" + date.toUTCString();
-        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=https://sullivan-jacob.github.io/D4-Dungeons/Webpages/";
+        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=.sullivan-jacob.github.io; Secure";
     }
     function getTheme() {
         const themeCookie = `; ${document.cookie}`;
