@@ -43,7 +43,7 @@
     modeToggle.addEventListener('change', function() {
       if (this.checked) {
         body.classList.add('light-mode');
-        setTheme("light");
+        /*setTheme("light");*/
         /*
         navBar.classList.add('light-mode');
         links.forEach(link => link.classList.add('light-mode'));
@@ -53,7 +53,7 @@
         */
         } else {
         body.classList.remove('light-mode');
-        setTheme("dark");
+        /*setTheme("dark");*/
         /*
         navBar.classList.remove('light-mode');
         links.forEach(link => link.classList.remove('light-mode'));
@@ -63,11 +63,12 @@
         */
         }
     });
+    /*
     function setTheme(theme) {
         const date = new Date();
-        date.setTime(date.getTime() + (2592000000/*30 days*/));
+        date.setTime(date.getTime() + (2592000000/*30 days/));
         const expires = "expires=" + date.toUTCString();
-        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=.sullivan-jacob.github.io; Secure";
+        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=sullivan-jacob.github.io/D4-Dungeons/Webpages";
     }
     function getTheme() {
         const themeCookie = `; ${document.cookie}`;
@@ -83,6 +84,6 @@
             body.classList.add("light-mode");
             modeToggle.checked = true;
         }
-    }
+    }*/
   </script>
 </html>
