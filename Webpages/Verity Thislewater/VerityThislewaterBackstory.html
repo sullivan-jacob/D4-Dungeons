@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verity Thislewater | Backstory</title>
+    <link rel="stylesheet" type="text/css" href="../D4DungeonsCSS.css" />
+</head>
+<body>
+    <main>
+        <nav id="nav-bar">
+            <a href="VerityThislewater.html">Main Page</a>
+            <a href="VerityThislewaterBackstory.html">Backstory</a>
+            <a href="VertiyThislewaterGoals.html">Goals</a>
+        </nav>
+        <input type="checkbox" id="switch" />
+        <div class="switch-btn">
+            <label for="switch">
+                <img src="Resources/moon-icon.png" alt="Dark Mode" id = "moon-icon" />
+                <img src="Resources/sun-icon.png" alt="Light Mode" id = "sun-icon"/>
+            </label>
+        </div>
+        <div id="content">
+            <h1>Backstory</h1>
+            <p>Verity grew up in a druidic society that valued nature. She always had a tendency to wander off, and one day, found herself lost in the Feywild. Verity took to the realm of the fey surprisingly well, and eventually found herself an honored guest at the court of the Archfey Titania. The two began to spend much time together, and eventually fell in love. Verity admired Titania’s boldness and commitment to her own alongside her radiant beauty. Titania fell for Verity’s honesty and pure zest for life. The two were wed, and Verity chose to become a Warlock of Titania to strengthen their bond even further. Eventually Verity was sent back to the material plane to help shore up the Feywild’s connection to it via the gathering of artifacts and returning them to their rightful places of power. Time passes differently in the Feywild, and so Verity returned to a mortal world that was very much not the one she was raised in. To her, the Feywild is home. Verity has now spent many decades at this work, and seeks to tie up all the last loose ends that Titania has provided her, so she may at last return home to be with her wife for the rest of her life.</p>
+            <h2>Relationships</h2>
+            <p>Verity has several NPC relationships that are important to her character.</p>
+            <h3>Titania:</h3>
+            <p>Titania is an archfey and high lady of the Seelie Court. While Verity was not her first love, nor will she be her last, she is deeply in love with Verity, who reciprocates this love. The two are wed, although she also acts in most active moments primarily as Verity’s warlock patron. Titania most often chooses to appear as an Eladrin woman with burnished skin, hair of all the colors of fall leaves, and eyes of radiant gold. At this point in time, with their relationship well established, her love for Verity is primarily a gentle sort of married couple love. Affectionate and tender, but not overly passionate.</p>    
+            <h3>Robin Goodfellow:</h3>
+            <p>Robin Goodfellow is not a name, but rather a title. King Oberon of the Seelie Court appoints one Warlock every generation to serve as his servant in the Material Plane. This generation’s Robin Goodfellow is an Eladrin man in Spring Court. He considers Verity an ally, and respects her tendency to lie and trick her way into accomplishing her goals. While the two have worked together in the past, and they are ultimately fond of each other, Verity knows that the role of the Puck is to go where Oberon commands, and Oberon alone, and as such does not fully trust him. Robin Goodfellow reciprocates this lack of trust, and therefore could be played as ally, enemy or even both!</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    const modeToggle = document.getElementById('switch');
+    const body = document.body;
+  
+    modeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.add('light-mode');
+        /*setTheme("light");*/
+        /*
+        navBar.classList.add('light-mode');
+        links.forEach(link => link.classList.add('light-mode'));
+        headers.forEach(header => header.classList.add('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.add('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.add('light-mode'));
+        */
+        } else {
+        body.classList.remove('light-mode');
+        /*setTheme("dark");*/
+        /*
+        navBar.classList.remove('light-mode');
+        links.forEach(link => link.classList.remove('light-mode'));
+        headers.forEach(header => header.classList.remove('light-mode'));
+        subheaders.forEach(subheader => subheader.classList.remove('light-mode'));
+        paragraphs.forEach(paragraph => paragraph.classList.remove('light-mode'));
+        */
+        }
+    });
+    /*
+    function setTheme(theme) {
+        const date = new Date();
+        date.setTime(date.getTime() + (2592000000/*30 days/));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = "theme=" + theme + ";" + expires + ";path=/; domain=sullivan-jacob.github.io/D4-Dungeons/Webpages";
+    }
+    function getTheme() {
+        const themeCookie = `; ${document.cookie}`;
+        const parts = themeCookie.split(`; theme=`);
+        if (parts.length === 2) {
+            return parts.pop().split(';').shift();
+        }
+    }
+    window.onload = function() {
+        const modeToggle = document.getElementById("switch");
+        theme = getTheme();
+        if (theme === light) {
+            body.classList.add("light-mode");
+            modeToggle.checked = true;
+        }
+    }*/
+  </script>
+</html>

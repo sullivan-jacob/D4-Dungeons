@@ -1,6 +1,6 @@
 body {
     --primary-color: #8B5F34;
-    --accent-color: #D98324;
+    --accent-color: #8A3324;
     --secondary-color: #5E7D9A;
     --background-color: #1B1B1B;
 
@@ -15,7 +15,6 @@ main {
 
 #nav-bar {
     grid-column: 1/2;
-    float: left;
     background-color: var(--accent-color);
     margin-top: 5px;
     margin-right: 5px;
@@ -115,6 +114,11 @@ h2 {
     margin-bottom: 0px;
 }
 
+h3 {
+    color: var(--accent-color);
+    margin-bottom: 0px;
+}
+
 p {
     margin: 5px;
     margin-right: 5px;
@@ -161,4 +165,14 @@ content img {
 
 .light-mode #moon-icon {
     visibility: hidden;
+}
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: block;
+    }
+    #nav-bar {
+        float: left;
+    }
 }
