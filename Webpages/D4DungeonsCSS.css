@@ -36,6 +36,17 @@ a:hover {
     border-radius: 5px;
 }
 
+.header {
+    display: block;
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 15pt;
+}
+
+.header:hover {
+    background-color: var(--accent-color);
+}
+
 div a {
     margin-left: 25px;
 }
