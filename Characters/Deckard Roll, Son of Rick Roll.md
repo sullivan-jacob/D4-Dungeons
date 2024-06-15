@@ -6,3 +6,13 @@ A story worthy enough for a song.
 
 
 Have names ready to post in lore channel
+
+There must be a rick roll somewhere in Deckard's public pages
+
+
+
+Native: Top right island, underdark
+
+Congress of hell, elective by power
+
+Elves are classist
